@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "clean": "node tools/build clean",
-    "build": "npm run clean && tsc -p . && node tools/build move",
+    "build": "npm run clean && tsc -p .",
     "test": "npm run build && nyc ava",
     "release": "standard-version && git push --follow-tags origin master"
   },
